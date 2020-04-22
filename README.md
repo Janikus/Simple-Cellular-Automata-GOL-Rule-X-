@@ -1,0 +1,1 @@
+# Simple-Cellular-Automata-GOL-Rule-X-

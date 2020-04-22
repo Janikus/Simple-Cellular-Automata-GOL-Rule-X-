@@ -49,9 +49,9 @@ class CA:
                 mouseClick = pygame.mouse.get_pressed()
 
                 if sum(mouseClick) > 0:
-                    posX, posY = pygame.mouse.get_pos()
-                    celX, celY = int(np.floor(posX / dim_cw)), int(np.floor(posY / dim_ch))
-                    self.newGameState[celX, celY] = not mouseClick[2]
+                    pos_x, pos_y = pygame.mouse.get_pos()
+                    cel_x, cel_y = int(np.floor(pos_x / dim_cw)), int(np.floor(pos_y / dim_ch))
+                    self.newGameState[cel_x, cel_y] = not mouseClick[2]
 
             for y in range(ny_c):
 
@@ -101,7 +101,8 @@ class GOL(CA):
 class RuleX(CA):
     def set_rule(self, rule):
         rule_bin = []
-
+        
+        # transform from base10 to base2
         while not (rule == 1 or rule == 0):
             p = rule // 2
             q = rule % 2

@@ -9,5 +9,6 @@ There is no way of exiting the pygame window (couldn't find a way). You must use
 Programmed by Janikus,
 based on a video on YouTube on the channel Dot CSV ("Programa el Juego de La Vida... en 10 MINUTOS!").
 
-controls: press any key to pause or continue the simulation
-          use left click to make a cell black, right click to make a cell white
+controls: 
+press any key to pause or continue the simulation
+use left click to make a cell black, right click to make a cell white

@@ -19,8 +19,8 @@ class CA:
 
         pygame.init()
 
-        width, height = 1000, 1000
-        screen = pygame.display.set_mode((height, width))
+        width, height = nx_c * 5, ny_c * 5
+        screen = pygame.display.set_mode((width, height))
 
         bg = 255, 255, 255
 
@@ -101,7 +101,7 @@ class GOL(CA):
 class RuleX(CA):
     def set_rule(self, rule):
         rule_bin = []
-        
+
         # transform from base10 to base2
         while not (rule == 1 or rule == 0):
             p = rule // 2
@@ -149,3 +149,4 @@ class RuleX(CA):
             self.newGameState[x, y] = rule_bin[6]
         elif neigh[0] == 1 and neigh[1] == 1 and neigh[2] == 1:
             self.newGameState[x, y] = rule_bin[7]
+            

@@ -1,6 +1,6 @@
 import main
 
-dimensions = int(input("Select a number of cells (for both width and height): "))
+dimensions = int(input("Introduce screen size (for both width and height): "))
 
 gol = main.GOL(dimensions, dimensions)
 ruleX = main.RuleX(dimensions, dimensions)

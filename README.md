@@ -1,4 +1,4 @@
-# Simple-Cellular-Automata-(from NKS and others)-with-pygame
+# Simple Cellular Automata (from NKS and others) with pygame
 
 Execute plot.py for a user interface.
 
